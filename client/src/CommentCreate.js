@@ -8,7 +8,7 @@ export default ({ postId }) => {
     e.preventDefault();
 
     await axios.post(
-      `http://localhost:4001/posts/${postId}/comments`,
+      `http://posts.com/posts/${postId}/comments`,
       { content },
       { headers: {'Content-Type': 'application/json' }},
     );
